@@ -8,7 +8,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 h1,h2,h3{font-family:var(--sf);font-weight:500;line-height:1.1}
 h2{font-size:clamp(2rem,4.5vw,3.4rem)}
 .eb{font-size:.78rem;letter-spacing:.28em;color:var(--br);text-transform:uppercase}
-.im{position:absolute;inset:0;background:linear-gradient(160deg,#1b3a68,#0B1B33) center/cover no-repeat;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.im{position:absolute;inset:0;background:linear-gradient(160deg,#1b3a68,#0B1B33) center/cover no-repeat;transition:scale 1.4s cubic-bezier(.2,.7,.2,1)}
 .gl{background:var(--gl);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(200,162,74,.4)}
 .bt{display:inline-block;padding:.9rem 1.8rem;background:var(--br);color:var(--bg);font-weight:500;letter-spacing:.08em;font-size:.85rem;transition:background .3s,transform .3s}
 .bt:hover{background:var(--iv);transform:translateY(-2px)}
@@ -35,8 +35,11 @@ nav a:hover,nav button:hover{color:var(--br)}
 nav i{font-style:normal;color:var(--br)}
 /* hero */
 .hero{position:relative;height:100vh;min-height:600px;overflow:hidden;display:flex;align-items:center}
-.hero .im{top:-10%;height:120%;background-position:70% 20%}
-.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,23,15,.78) 0,rgba(7,23,15,.4) 38%,transparent 65%),linear-gradient(transparent 70%,var(--bg))}
+.hero .im{top:-10%;height:120%;background-position:68% 25%}
+.shade{position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(5,10,20,.78) 0,rgba(5,10,20,.35) 42%,transparent 72%),
+  linear-gradient(rgba(0,0,0,.5),transparent 22%),
+  linear-gradient(transparent 75%,rgba(0,0,0,.45))}
 .hc{position:relative;padding:0 6vw;max-width:640px}
 .hc h1{font-size:clamp(3.2rem,6.4vw,5.8rem);margin:.8rem 0 1rem}
 .hc h1 em{color:var(--br)}
@@ -54,7 +57,7 @@ nav i{font-style:normal;color:var(--br)}
 @keyframes dap{to{transform:translate(4%,-3%) scale(1.15);opacity:.6}}
 .arches{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;max-width:1100px;margin:0 auto}
 .arch{position:relative;display:block;aspect-ratio:3/4.4;border-radius:999px 999px 6px 6px;overflow:hidden;border:1px solid rgba(200,162,74,.4)}
-.arch:hover .im,.xc:hover .im,.pc:hover .im,.kc:hover .im{transform:scale(1.07)}
+.arch:hover .im,.xc:hover .im,.pc:hover .im,.kc:hover .im{scale:1.07}
 .lb{position:absolute;left:8%;right:8%;bottom:6%;padding:1.1rem;text-align:center}
 .lb h3{font-size:1.6rem}.lb p{font-size:.85rem;color:var(--mu)}.lb span{color:var(--br);font-size:.8rem;letter-spacing:.1em}
 .cn{position:relative;text-align:center;margin-top:2rem;font:1.1rem var(--sf);color:var(--br);letter-spacing:.2em}
