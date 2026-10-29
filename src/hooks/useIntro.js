@@ -23,7 +23,7 @@ export default function useIntro(scope, lenisRef, onDone) {
         .to('#il', { opacity: 0, duration: 0.5 }, 'open')
         .to('.cl', { xPercent: -100, duration: 1.3, ease: 'power3.inOut' }, 'open')
         .to('.cr', { xPercent: 100, duration: 1.3, ease: 'power3.inOut' }, 'open')
-        .from('.hb', { scale: 1.3, duration: 2.2, ease: 'power2.out' }, 'open')
+        .from('.hb', { scale: 1.12, duration: 2.2, ease: 'power2.out' }, 'open')
         .from('nav', { yPercent: -100, opacity: 0, duration: 0.9, ease: 'power3.out' }, 'open+=.9')
         .from('.h', { y: 40, opacity: 0, stagger: 0.16, duration: 1, ease: 'power3.out' }, 'open+=.8')
     },

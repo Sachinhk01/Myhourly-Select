@@ -1,0 +1,64 @@
+/* ---------- hero ---------- */
+.hero{--sn:'Montserrat',system-ui,sans-serif;--sc:'Cormorant Garamond',Georgia,serif;position:relative;height:100vh;min-height:620px;overflow:hidden;display:flex;align-items:center}
+.hero{background:#0a1a2e}
+.hero .im{
+  top:0;height:100%;
+  background-size:auto 94%;
+  background-position:calc(100% - 1vw) bottom;
+  background-repeat:no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,transparent 14%,#000 40%);
+  mask-image:linear-gradient(90deg,transparent 14%,#000 40%);
+}
+.shade{position:absolute;inset:0;background:
+  linear-gradient(180deg,#0a1a2e 0,rgba(10,26,46,0) 16%),
+  linear-gradient(90deg,rgba(0,0,0,.35) 0,transparent 55%),
+  linear-gradient(transparent 75%,rgba(0,0,0,.45))}
+.hc{position:relative;padding:0 6.5vw;max-width:760px;margin-top:4vh}
+.hc .eb{display:flex;align-items:center;gap:1.6rem;font:500 .74rem var(--sn);letter-spacing:.3em}
+.hc .eb i{width:64px;height:1px;background:var(--br)}
+.hc h1{font-size:clamp(2.6rem,5vw,4.6rem);line-height:1.08;margin:1.6rem 0 1.2rem;color:var(--iv)}
+.hc h1 em{font-style:italic;color:var(--br)}
+.sub{font:italic 400 clamp(1.4rem,2vw,1.8rem) var(--sc);margin-bottom:2.4rem;color:var(--iv)}
+.cta{display:flex;flex-wrap:wrap;gap:1rem}
+.hc .bt{display:inline-flex;align-items:center;gap:1rem;padding:1.15rem 2.3rem;font:500 .74rem var(--sn);letter-spacing:.22em;text-transform:uppercase;background:linear-gradient(135deg,#dcbc7c,#b8913f);color:#2a1f08;margin:0}
+.hc .bt:hover{background:linear-gradient(135deg,#f0d9a0,#c9a45c);transform:translateY(-2px)}
+.hc .bt.o{background:transparent;color:var(--iv);border:1px solid rgba(243,235,221,.55)}
+.hc .bt.o:hover{background:var(--iv);color:#111;border-color:var(--iv)}
+.side{position:absolute;right:4vw;top:22vh;display:flex;flex-direction:column;align-items:center;gap:.55rem;font:500 .68rem var(--sn);letter-spacing:.32em;text-transform:uppercase;text-align:center;padding-left:.32em}
+.side b{width:1px;height:62px;margin-top:1.4rem;background:var(--iv);opacity:.8}
+.tag{position:absolute;right:4vw;bottom:3rem;display:flex;gap:1.4rem;font:500 .68rem var(--sn);letter-spacing:.26em;text-transform:uppercase}
+
+@media(max-width:860px){
+nav{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);padding:.7rem 5vw}
+nav .lk{display:none}
+nav .nav-left{visibility:hidden}
+nav .nav-right{justify-content:flex-end}
+.ic{gap:1.1rem}
+.hero .im{background-size:auto 100%;background-position:calc(74% + 1vw) bottom}
+.hero{align-items:flex-end;padding-bottom:6rem}
+.hc{padding:0 6vw;margin:0}
+.hc .bt{padding:1rem 1.5rem}
+.side{display:none}
+.tag{left:0;right:0;justify-content:center;bottom:1.8rem;gap:1rem;font-size:.6rem}
+}
+
+nav .lk a{white-space:nowrap}
+nav .lk{gap:1.6rem}
+
+/* Keep the logo centered even when the navigation groups have different widths. */
+nav{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);padding:.4rem 4vw}
+nav .nav-left{display:flex;justify-content:flex-end;min-width:0}
+nav .nav-left .lk{transform:translateX(-2vw)}
+nav .nav-right{display:flex;align-items:center;justify-content:flex-start;gap:1.6rem;min-width:0}
+nav .nav-right .ic{margin-left:auto}
+.hc{margin-top:0}
+.hc .eb{color:#d8c8a4}
+.hc h1{font-size:clamp(2.6rem,4.8vw,4.4rem);font-weight:400;color:#f3ead8}
+.sub{font-size:clamp(1.25rem,1.6vw,1.5rem)}
+.hc .bt{height:58px;padding:0 2.1rem;font-size:.72rem;letter-spacing:.2em}
+
+@media(max-width:860px){
+  nav{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);padding:.4rem 5vw}
+  nav .nav-left{display:block}
+  nav .nav-right{justify-content:flex-end}
+}

@@ -12,7 +12,7 @@ export default function useScrollAnimations(scope) {
       const root = scope.current
 
       gsap.to('.hb', {
-        yPercent: 14,
+        yPercent: 4,
         ease: 'none',
         scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
       })

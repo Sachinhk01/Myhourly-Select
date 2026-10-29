@@ -1,9 +1,10 @@
 export const NAV_LEFT = [
   { href: '#top', label: 'Home' },
-  { href: '#new', label: 'New Arrivals' },
-  { href: '#explore', label: 'Collections' }
+  { href: '#explore', label: 'Men' },
+  { href: '#craft', label: 'Zardozi' }
 ]
 export const NAV_RIGHT = [
+  { href: '#new', label: 'New Arrivals' },
   { href: '#best', label: 'Best Sellers' },
   { href: '#story', label: 'Our Story' }
 ]
@@ -22,9 +23,9 @@ export const EXPLORE = [
 ]
 
 export const ZARDOZI = [
-  { title: 'Sherwanis', text: 'Gold on ivory.', img: 'craft' },
-  { title: 'Kurta Sets', text: 'Quiet detail.', img: 'a2' },
-  { title: 'Stoles', text: 'The finishing touch.', img: 'a3' }
+  { title: 'Zardozi Sherwanis', text: 'Stories stitched in gold.', img: 'z1' },
+  { title: 'Kurta Sets', text: 'Heritage in everyday form.', img: 'z2' },
+  { title: 'Stoles', text: 'A touch of tradition.', img: 'z3' }
 ]
 
 export const BEST_SELLERS = [

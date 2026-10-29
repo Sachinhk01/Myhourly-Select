@@ -1,10 +1,14 @@
 export const IMG = {
-  hero: '/images/hero.jpg',
-  a1: '/images/sherwani.jpg',
-  a2: '/images/kurta.jpg',
-  a3: '/images/bandhgala.jpg',
-  wed: '/images/wedding.jpg',
-  fes: '/images/festive.jpg',
-  craft: '/images/zardozi.jpg',
-  story: '/images/story.jpg'
+  hero: '/images/hero.png',
+  a1: '/images/a1.png',
+  a2: '/images/a2.png',
+  a3: '/images/a3.png',
+  wed: '/images/wed.png',
+  fes: '/images/fes.png',
+  zmain: '/images/zmain.png',
+  z1: '/images/z1.png',
+  z2: '/images/z2.png',
+  z3: '/images/z3.png',
+  craft: '/images/z1.png',
+  story: '/images/story.png'
 }
