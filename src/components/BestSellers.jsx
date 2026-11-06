@@ -7,7 +7,7 @@ export default function BestSellers() {
   const { wish, saveToWish, addToBag } = useShop()
   return (
     <section className="sec" id="best">
-      <SectionHead eyebrow="MyHourly Select" title="Best Sellers" text="The pieces our customers reach for most." />
+      <SectionHead eyebrow="Vintage Fashion" title="Best Sellers" text="The pieces our customers reach for most." />
       <div className="bs">
         {BEST_SELLERS.map((p) => (
           <div key={p.name} className="pc rv" style={p.wide ? { gridColumn: 'span 2' } : undefined}>

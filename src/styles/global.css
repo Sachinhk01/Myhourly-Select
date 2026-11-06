@@ -14,31 +14,23 @@ h2{font-size:clamp(2rem,4.5vw,3.4rem)}
 .bt:hover{background:var(--iv);transform:translateY(-2px)}
 .bt.o{background:transparent;color:var(--iv);border:1px solid var(--br);margin-left:.8rem}
 .bt.o:hover{background:var(--br);color:var(--bg)}
-.mono{display:inline-grid;place-items:center;width:64px;height:64px;border:1px solid var(--br);border-radius:50%;font:500 1.9rem var(--sf);color:var(--br);box-shadow:0 0 0 5px var(--bg),0 0 0 6px rgba(200,162,74,.5)}
-.mono.s{width:30px;height:30px;font-size:1rem;box-shadow:none}
 /* intro curtain */
 #intro{position:fixed;inset:0;z-index:100;display:grid;place-items:center}
 .cp{position:absolute;top:0;bottom:0;width:50.2%;background:repeating-linear-gradient(90deg,#0a1f5c 0,#2450c4 4%,#4a78e8 6%,#2450c4 8%,#0a1f5c 12%)}
 .cp::after{content:"";position:absolute;inset:0;background:linear-gradient(#000a,transparent 25%,transparent 70%,#0008)}
 .cl{left:0}.cr{right:0}
-#il{position:relative;text-align:center;display:grid;gap:.6rem;justify-items:center}
-#il b{font:500 1.7rem var(--sf);letter-spacing:.4em;padding-left:.4em}
-#il small{letter-spacing:.5em;font-size:.75rem;color:var(--br)}
+#il{position:relative;text-align:center;display:grid;justify-items:center}
 /* nav */
 nav{position:fixed;top:0;left:0;right:0;z-index:50;display:grid;grid-template-columns:1fr 1fr auto 1fr 1fr;align-items:center;padding:.9rem 3vw;background:linear-gradient(rgba(5,10,20,.6),transparent)}
 nav{transition:background .4s,padding .4s}
 nav.sc{background:rgba(8,18,36,.94);padding:.5rem 3vw;box-shadow:0 1px 0 rgba(200,162,74,.25)}
-nav.sc .lg .mono{width:34px;height:34px;font-size:1.05rem;margin-bottom:.2rem}
-nav.sc .lg b{font-size:.9rem}
-nav.sc .lg small{display:none}
+nav.sc .vf-logo{gap:.2rem}
+nav.sc .vf-logo__mark{width:34px;height:34px;font-size:1.05rem}
+nav.sc .vf-logo__name{font-size:.9rem}
 nav .lk{display:flex;gap:1.8rem;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
 nav .lk.l{justify-content:flex-end;padding-right:2.5rem}
 nav .lk.r{justify-content:flex-start;padding-left:2.5rem}
 nav a:hover,nav button:hover{color:var(--br)}
-.lg{display:grid;justify-items:center;line-height:1.1}
-.lg .mono{width:44px;height:44px;font-size:1.3rem;box-shadow:none;margin-bottom:.35rem}
-.lg b{font:500 1.05rem var(--sf);letter-spacing:.4em;padding-left:.4em;color:var(--br)}
-.lg small{font-size:.55rem;letter-spacing:.6em;padding-left:.6em;color:var(--br)}
 .ic{display:flex;justify-content:flex-end;gap:1.4rem}
 .ic button{position:relative;display:grid;place-items:center}
 .ic i{position:absolute;top:-6px;right:-9px;min-width:16px;height:16px;border-radius:8px;background:var(--br);color:var(--bg);font:500 .62rem/16px var(--ss);font-style:normal;text-align:center}
@@ -177,8 +169,7 @@ footer h4{font:500 .7rem var(--ss);letter-spacing:.3em;text-transform:uppercase;
 footer h4::after{content:"";display:block;width:18px;height:1px;margin-top:.5rem;background:var(--br)}
 footer li{margin-bottom:.8rem;font-size:.85rem}
 footer li a:hover{color:var(--br)}
-.fb .lg{justify-items:start;margin-bottom:1.2rem}
-.fb .lg .mono{width:56px;height:56px;font-size:1.6rem}
+.fb .vf-logo{align-items:flex-start;margin-bottom:1.2rem}
 .fb p{font-size:.85rem;color:var(--mu);max-width:15rem}
 .fb .sc{margin-top:1.4rem;font:400 2rem/1.1 'Great Vibes',cursive;color:var(--br)}
 .nt{font-size:.8rem;color:var(--mu);margin-bottom:1rem}
@@ -215,3 +206,6 @@ nav{grid-template-columns:1fr auto 1fr}nav .lk{display:none}
 .bt.o{margin:.8rem 0 0}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.vf-logo{display:inline-flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--br)}
+.vf-logo__mark{width:54px;height:54px;border:1px solid var(--br);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:20px;font-weight:500;letter-spacing:1px}
+.vf-logo__name{font-family:"Playfair Display",serif;font-size:22px;letter-spacing:.35em;text-transform:none}

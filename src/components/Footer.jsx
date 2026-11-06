@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Lotus from './Lotus'
+import Logo from './Logo'
 
 const S = { width: 16, height: 16, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.4, strokeLinecap: 'round', strokeLinejoin: 'round' }
 
@@ -41,11 +42,7 @@ export default function Footer() {
       <footer>
         <div className="fg">
           <div className="fb">
-            <div className="lg">
-              <span className="mono">H</span>
-              <b>MYHOURLY</b>
-              <small>SELECT</small>
-            </div>
+            <Logo />
             <p>Heritage menswear, tailored for tomorrow.</p>
             <p className="sc">Tradition<br />&nbsp;&nbsp;&nbsp;Lives Beautifully</p>
           </div>
@@ -71,7 +68,7 @@ export default function Footer() {
 
         <div className="dv" />
         <div className="fbar">
-          <span>© 2026 MyHourly Select. All rights reserved.</span>
+          <span>© 2026 Vintage Fashion. All rights reserved.</span>
           <span className="fl2">Privacy Policy &nbsp;|&nbsp; Terms &amp; Conditions &nbsp;|&nbsp; Sitemap</span>
           <a href="#top" className="btt"><span><svg {...S}><path d="M12 19V5M6 11l6-6 6 6" /></svg></span>Back to top</a>
         </div>
